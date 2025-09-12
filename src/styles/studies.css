@@ -1,0 +1,105 @@
+/* ===== Studies (skills-sektion) ===== */
+.skills {
+  padding: 100px 0;
+  background: url("../assets/Images/skills-bg.png") no-repeat center center;
+  background-size: cover;
+  color: #000; /* se till att texten syns ovanpå */
+}
+
+.skills {
+  background: #fff; /* ljus bakgrund, matcha din About om du vill */
+  color: #000;
+  padding: 100px 0;
+}
+
+.skills .title {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.skills .title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  background: transparent;
+  z-index: -1;
+}
+
+.skills .title::after {
+  content: "Courses I got my skills from";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  color: #1d2153;
+  background: transparent;
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+/* två kolumner */
+.skills .skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+  margin-top: 56px;
+}
+
+.skills .skills-content .column .text {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .column .text.accent {
+  color: #1d2153;
+}
+
+/* listor */
+.study-list {
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #000000;
+  font-weight: 400;
+}
+
+.study-list li + li {
+  margin-top: 6px;
+}
+
+.skills .link-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #1d2153;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 2px solid #1d2153;
+  transition: all 0.3s ease;
+}
+
+.skills .link-btn:hover {
+  background: transparent;
+  color: #1d2153;
+}
+
+/* responsiv: stacka kolumner */
+@media (max-width: 900px) {
+  .skills .skills-content {
+    grid-template-columns: 1fr;
+  }
+
+  .skills .title::after {
+    bottom: -30px;
+  }
+}

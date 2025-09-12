@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 0;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.title-accent {
+  color: #5e83d1;
+}
+
+.btn {
+  display: inline-block;
+  background: #f9a826;
+  color: #fff;
+  border: 2px solid #f9a826;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: transparent;
+  color: #f9a826;
+}
+
+.columns {
+  display: grid;
+  gap: 32px;
+  align-items: flex-start;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.text-muted {
+  color: #a7adb7;
+}
+.shadow {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+.round {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.center {
+  text-align: center;
+}

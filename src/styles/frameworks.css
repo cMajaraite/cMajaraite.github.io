@@ -1,0 +1,56 @@
+.tech-icon {
+  max-height: 120px;
+  width: auto;
+  display: block;
+  margin: 30px auto 12px;
+  object-fit: contain;
+}
+
+.tech-icon:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 900px) {
+  .framework .port-content .card {
+    padding: 32px 20px;
+  }
+}
+
+.framework .title {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.framework .title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.framework .title::after {
+  content: "what I use";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  background: #181616;
+  color: #5e83d1;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.framework .text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}

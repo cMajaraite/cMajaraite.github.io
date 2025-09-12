@@ -1,0 +1,147 @@
+/* Section base (light background to contrast dark sections) */
+.contact {
+  background: #181616;
+  color: #ffffff;
+  padding: 100px 0 0; /* footer sits inside the section */
+}
+
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* underline + subtitle chip (consistent with other sections) */
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.contact .title::after {
+  content: "How to reach me";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #181616;
+  color: #5e83d1;
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+/* grid */
+.contact-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 15px);
+  min-width: 300px;
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* left column content */
+.contact .contact-content .left p {
+  text-align: justify;
+  color: #fff;
+}
+
+.contact .contact-content .left .icons {
+  margin: 14px 0 0;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  margin-bottom: 8px;
+}
+
+.contact .contact-content .row .material-icons {
+  font-size: 36px;
+  color: #5e83d1;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 16px;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 600;
+}
+
+.contact .contact-content .info .sub-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact .contact-content .info .sub-title a:hover {
+  text-decoration: underline;
+}
+
+/* right column image */
+.contactImg {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(80, 34, 34, 0.15);
+}
+
+.contact-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* cover the whole wrapper */
+  background: linear-gradient(
+    rgba(89, 151, 209, 0.5),
+    /* purple tint */ rgba(63, 79, 112, 0.5) /* blue tint */
+  );
+  border-radius: 400px; /* match the image shape if needed */
+  pointer-events: none; /* lets clicks pass through */
+}
+
+/* footer (matches your dark footer style) */
+footer {
+  background: #c2c0c0;
+  padding: 15px 23px;
+  color: #000000;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer span a {
+  color: #000000;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .contact .contact-content .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,128 @@
+/* about section styling */
+.about {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.max-width {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+.about .title::after {
+  content: "Who am I?";
+  display: block;
+  margin-top: 8px;
+  color: #5e83d1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #5e83d1;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: nowrap;
+}
+
+.about .about-content .left {
+  flex: 0 0 40%;
+}
+
+.about .about-content .right {
+  flex: 1;
+}
+
+/* image */
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(17, 16, 16, 0.4);
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.about .about-content .right .text .typing-2 {
+  color: #5e83d1;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+  color: #000000;
+  line-height: 1.7;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: #1d2153;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #1d2153;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: #1d2153;
+  background: none;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .about .about-content {
+    flex-direction: column;
+  }
+  .about .about-content .left,
+  .about .about-content .right {
+    width: 100%;
+  }
+  .about .about-content .left img {
+    height: auto;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 12px;
+    display: block;
+  }
+}
