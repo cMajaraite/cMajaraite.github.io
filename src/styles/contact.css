@@ -1,8 +1,7 @@
-/* Section base (light background to contrast dark sections) */
 .contact {
   background: #181616;
   color: #ffffff;
-  padding: 100px 0 0; /* footer sits inside the section */
+  padding: 100px 0 0;
 }
 
 .contact .title {
@@ -13,7 +12,6 @@
   margin-bottom: 40px;
 }
 
-/* underline + subtitle chip (consistent with other sections) */
 .contact .title::before {
   content: "";
   position: absolute;
@@ -113,16 +111,12 @@
 .contact-image-wrapper::after {
   content: "";
   position: absolute;
-  inset: 0; /* cover the whole wrapper */
-  background: linear-gradient(
-    rgba(89, 151, 209, 0.5),
-    /* purple tint */ rgba(63, 79, 112, 0.5) /* blue tint */
-  );
-  border-radius: 400px; /* match the image shape if needed */
-  pointer-events: none; /* lets clicks pass through */
+  inset: 0;
+  background: linear-gradient(rgba(89, 151, 209, 0.5), rgba(63, 79, 112, 0.5));
+  border-radius: 400px;
+  pointer-events: none;
 }
 
-/* footer (matches your dark footer style) */
 footer {
   background: #c2c0c0;
   padding: 15px 23px;

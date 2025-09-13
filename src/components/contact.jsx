@@ -8,7 +8,6 @@ export default function Contact() {
         <h2 className="title">Contact Me</h2>
 
         <div className="contact-content">
-          {/* Left column */}
           <div className="column left">
             <div className="text">Get in touch</div>
             <p>

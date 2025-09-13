@@ -41,7 +41,7 @@
 
   .menu {
     position: absolute;
-    top: 60px; /* just below navbar */
+    top: 60px;
     right: 20px;
     background: rgba(0, 0, 0, 0.95);
     flex-direction: column;

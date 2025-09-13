@@ -1,7 +1,7 @@
 import "../styles/portfolio.css";
-import Carousel from "./Carousel";
-import RetrendoVideo from "../assets/videos/Retrendo.mp4";
-import FreakyFashionVideo from "../assets/videos/FreakyFashion.mp4";
+import Carousel from "./carousel";
+import RetrendoGif from "../assets/gifs/Retrendo.gif";
+import FreakyFashionGif from "../assets/gifs/FreakyFashion.gif";
 import Connect4Gif from "../assets/gifs/CatsvsDogs.gif";
 
 export default function Portfolio() {
@@ -10,25 +10,20 @@ export default function Portfolio() {
       <div className="max-width">
         <h2 className="title">My Portfolio</h2>
 
-        {/* Wrap projects inside your Carousel */}
         <Carousel show={1} autoplay interval={4000} speed={600} infinite>
-          {/* Retrendo Project */}
+          {/* Retrendo */}
           <div className="project">
             <div className="column left">
-              <video
-                src={RetrendoVideo}
-                className="project-video"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
+              <img
+                src={RetrendoGif}
+                alt="Retrendo project demo"
+                className="project-media"
               />
             </div>
             <div className="column right">
-              <h3 className="project-title">
+              <h2 className="project-title">
                 Retrendo – Secondhand Marketplace
-              </h3>
+              </h2>
               <p className="project-desc">
                 Retrendo is a Vinted-inspired secondhand e-commerce web app
                 built as a group project at EC Utbildning. Users can browse and
@@ -39,7 +34,7 @@ export default function Portfolio() {
               </p>
               <a
                 className="seeMoreBtn"
-                href="https://github.com/cMajaraite/Retrendo.git"
+                href="https://your-retrendo-demo-link.netlify.app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -48,21 +43,17 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* FreakyFashion Project */}
+          {/* FreakyFashion */}
           <div className="project">
             <div className="column left">
-              <video
-                src={FreakyFashionVideo}
-                className="project-video"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
+              <img
+                src={FreakyFashionGif}
+                alt="FreakyFashion project demo"
+                className="project-media"
               />
             </div>
             <div className="column right">
-              <h3 className="project-title">FreakyFashion – Angular & React</h3>
+              <h2 className="project-title">FreakyFashion – Angular & React</h2>
               <p className="project-desc">
                 FreakyFashion is a full-stack fashion e-commerce app built twice
                 to compare frameworks: one with Angular + Node.js/SQLite and one
@@ -73,7 +64,7 @@ export default function Portfolio() {
               </p>
               <a
                 className="seeMoreBtn"
-                href="https://github.com/cMajaraite/FreakyFashion-Angular"
+                href="https://your-freakyfashion-demo-link.netlify.app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -81,27 +72,24 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
-          {/* Connect4 Project */}
+
+          {/* Connect4 */}
           <div className="project">
             <div className="column left">
               <img
                 src={Connect4Gif}
                 alt="Connect4 demo"
-                className="project-gif"
+                className="project-media"
                 loading="lazy"
               />
             </div>
             <div className="column right">
-              <h3 className="project-title">Connect4 — React + Tailwind</h3>
+              <h2 className="project-title">Connect4 — React + Tailwind</h2>
               <p className="project-desc">
-                Cats vs Dogs Connect Four 🐱🐶 is a modern twist on the classic
-                Connect Four game, built with React 19, Vite, and Tailwind CSS.
-                Instead of the traditional red and yellow discs, players compete
-                as Cats versus Dogs, giving the game a fun theme. The interface
-                is styled entirely with Tailwind CSS, including semi-transparent
-                overlays for a clean and playful look. The game logic is powered
-                by React hooks such as useState to track the board and player
-                turns.
+                Cats vs Dogs Connect Four is a modern twist on the classic game,
+                built with React 19, Vite, and Tailwind CSS. Players compete as
+                Cats vs Dogs. The UI is responsive and the game logic uses React
+                hooks (useState) to manage board state and turns.
               </p>
               <a
                 className="seeMoreBtn"

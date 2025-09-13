@@ -7,7 +7,6 @@ export default function Services() {
         <h2 className="title">My Services</h2>
 
         <div className="serv-content">
-          {/* Web Development */}
           <div className="card">
             <div className="box">
               <span
@@ -25,7 +24,6 @@ export default function Services() {
             </div>
           </div>
 
-          {/* Web Design */}
           <div className="card">
             <div className="box">
               <span
@@ -42,7 +40,6 @@ export default function Services() {
             </div>
           </div>
 
-          {/* UX Design */}
           <div className="card">
             <div className="box">
               <span

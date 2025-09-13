@@ -5,7 +5,7 @@ export default function Studies() {
   return (
     <section
       className="skills"
-      id="skills"
+      id="studies"
       style={{
         backgroundImage: `url(${skillsBg})`,
         backgroundSize: "cover",
@@ -16,7 +16,6 @@ export default function Studies() {
         <h2 className="title">My Studies & Skills</h2>
 
         <div className="skills-content">
-          {/* Vänster: Completed */}
           <div className="column left">
             <div className="text accent">Courses I Completed</div>
             <ul className="study-list">
@@ -40,7 +39,6 @@ export default function Studies() {
             </a>
           </div>
 
-          {/* Höger: Left */}
           <div className="column right">
             <div className="text accent">Courses I Have Left</div>
             <ul className="study-list">

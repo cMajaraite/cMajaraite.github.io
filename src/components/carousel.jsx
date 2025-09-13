@@ -1,20 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../styles/carousel.css"; // se till att filen finns
+import "../styles/carousel.css";
 
 export default function Carousel({
   children,
   show = 3,
   infinite = true,
   autoplay = true,
-  interval = 3000, // byter slide var 3 sek
-  speed = 600, // hur lång tid animationen tar (ms)
+  interval = 8000,
+  speed = 300,
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(React.Children.count(children));
   const [isMobile, setIsMobile] = useState(false);
+  const [touchPosition, setTouchPosition] = useState(null);
   const autoplayRef = useRef(null);
 
-  // Check if screen is mobile size
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -26,7 +26,6 @@ export default function Carousel({
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Determine how many items to show based on screen size
   const itemsToShow = isMobile ? 1 : show;
 
   useEffect(() => {
@@ -51,7 +50,33 @@ export default function Carousel({
     }
   };
 
-  // Reset currentIndex when switching between mobile/desktop
+  // Touch handlers
+  const handleTouchStart = (e) => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
+
+  const handleTouchMove = (e) => {
+    const touchDown = touchPosition;
+
+    if (touchDown === null) {
+      return;
+    }
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+
+    if (diff > 5) {
+      next();
+    }
+
+    if (diff < -5) {
+      prev();
+    }
+
+    setTouchPosition(null);
+  };
+
   useEffect(() => {
     setCurrentIndex(0);
   }, [isMobile]);
@@ -70,7 +95,11 @@ export default function Carousel({
           ‹
         </button>
 
-        <div className="carousel-content-wrapper">
+        <div
+          className="carousel-content-wrapper"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
           <div
             className={`carousel-content show-${itemsToShow}`}
             style={{

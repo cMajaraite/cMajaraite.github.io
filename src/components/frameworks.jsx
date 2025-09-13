@@ -1,7 +1,6 @@
 import Carousel from "./carousel";
 import "../styles/frameworks.css";
 
-// import your images (adjust paths to your actual files)
 import ReactIcon from "../assets/Images/react_icon.png";
 import AngularIcon from "../assets/Images/angular-icon.png";
 import NodemonIcon from "../assets/Images/nodemon.png";
@@ -26,7 +25,7 @@ const TOOLS = [
 
 export default function Frameworks() {
   return (
-    <section className="framework" id="framework">
+    <section className="framework" id="frameworks">
       <div className="max-width">
         <h2 className="title">Frameworks and tools</h2>
 

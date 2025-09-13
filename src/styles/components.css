@@ -169,7 +169,6 @@
   transition: 0.3s;
 }
 
-/* Animate into X */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -188,7 +187,7 @@
 
   .nav {
     position: absolute;
-    top: 60px; /* just under navbar */
+    top: 60px;
     right: 5px;
     background: rgba(17, 17, 17, 0.95);
     backdrop-filter: blur(6px);

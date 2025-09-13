@@ -1,126 +1,16 @@
-/* Section look (matches your dark sections) */
 .portfolio {
   background: #ffffff;
   color: #000000;
   padding: 100px 0;
 }
-.portfolio .title::before {
-  background: hsl(0, 100%, 100%);
-}
-.portfolio .title::after {
-  content: "My Projects";
-  background: hsl(0, 0%, 100%);
-  color: #5e83d1;
-  padding: 0 8px;
-  font-size: 18px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -30px;
-}
 
-/* Slide layout */
-.project-slide {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.project {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  flex-wrap: wrap; /* stack on small screens */
-}
-
-/* Columns */
-.project .column {
-  flex: 1;
-  min-width: 280px;
-}
-
-.project .column.left {
-  flex: 1;
-}
-.project .column.right {
-  flex: 1.2;
-}
-
-/* Video */
-.project-video {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
-  display: block;
-}
-
-/* Text */
-.project-title {
-  color: #1d2153;
-  font-size: 24px;
-  margin: 0 0 10px;
-  font-weight: 700;
-}
-.project-desc {
-  color: #000000;
-  font-size: 15px;
-  line-height: 1.65;
-  text-align: justify;
-  margin: 0 0 16px;
-}
-
-/* Button (you already use this style) */
-.seeMoreBtn {
-  display: inline-block;
-  background: #1d2153;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: 2px solid #1d2153;
-  transition: all 0.3s ease;
-}
-.seeMoreBtn:hover {
-  background: none;
-  color: #1d2153;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .project {
-    gap: 20px;
-  }
-  .project-video {
-    max-width: 100%;
-  }
-  .project .column.right {
-    flex: 1;
-  }
-}
-
-p {
-  color: #000000;
-}
-
-h2 .title {
-  color: #000000;
-}
-
-/* Portfolio section */
-.portfolio {
-  color: #000000;
-  background: #ffffff;
-  padding: 100px 0;
-}
-
-/* Title styling (same pattern as About/Services) */
 .portfolio .title {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 40px;
   position: relative;
+  color: #000;
 }
 
 .portfolio .title::before {
@@ -146,11 +36,87 @@ h2 .title {
   background: #ffffff;
 }
 
-.project-gif {
+.project-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.project .column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project .column.right {
+  flex: 1.2;
+}
+
+.project-media {
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
   display: block;
-  object-fit: cover; /* or contain if you prefer full image visible */
+  object-fit: cover;
+}
+
+.project-video,
+.project-gif {
+  all: unset;
+  display: initial;
+}
+
+.project-title {
+  color: #1d2153;
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.project-desc {
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.65;
+  text-align: justify;
+  margin: 0 0 16px;
+}
+
+.seeMoreBtn {
+  display: inline-block;
+  background: #1d2153;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 2px solid #1d2153;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.seeMoreBtn:hover {
+  background: none;
+  color: #1d2153;
+}
+
+@media (max-width: 900px) {
+  .project {
+    gap: 20px;
+  }
+  .project .column.right {
+    flex: 1;
+  }
+  .project-media {
+    max-width: 100%;
+  }
+}
+
+.portfolio p {
+  color: #000000;
 }

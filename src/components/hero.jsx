@@ -1,6 +1,6 @@
 import { ReactTyped } from "react-typed";
-import BgFront from "../assets/Images/bg-front.jpg"; // ← your background image
-import MeImg from "../assets/Images/bg2.jpg"; // ← your avatar
+import BgFront from "../assets/Images/bg-front.jpg";
+import MeImg from "../assets/Images/bg2.jpg";
 import "../styles/hero.css";
 
 export default function Hero() {
@@ -17,7 +17,6 @@ export default function Hero() {
             <img src={MeImg} alt="Cordelia Majaraite" />
           </div>
 
-          {/* Intro + social + typed */}
           <div className="intro">
             <div className="social-icons">
               <a

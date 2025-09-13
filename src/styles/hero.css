@@ -130,7 +130,7 @@
   }
 }
 
-/* 👉 Mobile: stack and center */
+/*Mobile: stack and center */
 @media (max-width: 900px) {
   .hero .hero-wrap {
     flex-direction: column;
@@ -139,13 +139,13 @@
   }
   .hero .hero-wrap img {
     margin: 0 auto;
-    width: 120px; /* adjust as you like */
-    height: 120px; /* adjust as you like */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
   }
   .hero .hero-wrap h1 {
-    font-size: 26px; /* slightly smaller on mobile */
+    font-size: 26px;
     margin: 8px 0 4px;
   }
   .hero .hero-wrap p {
