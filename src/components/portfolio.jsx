@@ -34,7 +34,7 @@ export default function Portfolio() {
               </p>
               <a
                 className="seeMoreBtn"
-                href="https://your-retrendo-demo-link.netlify.app"
+                href="https://github.com/cMajaraite/Retrendo.git"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -64,7 +64,7 @@ export default function Portfolio() {
               </p>
               <a
                 className="seeMoreBtn"
-                href="https://your-freakyfashion-demo-link.netlify.app"
+                href="https://github.com/cMajaraite/FreakyFashion-Angular.git"
                 target="_blank"
                 rel="noreferrer"
               >
