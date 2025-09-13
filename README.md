@@ -1,12 +1,30 @@
-# React + Vite
+# Cordelia Majaraite – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal **portfolio website**, built with React, Vite, and CSS.  
+It showcases projects I’ve created during my studies as a Frontend Developer at **EC Utbildning**, highlighting the skills and tools I’ve been learning.  
 
-Currently, two official plugins are available:
+The portfolio serves both as a creative exercise and a professional introduction, giving me a space to demonstrate what I can do as I continue to grow as a developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Responsive design** – works on desktop and mobile
+- **Navigation** – smooth scrolling sections with a mobile-friendly hamburger menu
+- **Hero section** – quick introduction and animated titles
+- **About me** – who I am and what motivates me as a developer
+- **Services** – areas I can work with (Web Dev, UX/UI, Design)
+- **Studies** – courses I’ve completed and those still in progress
+- **Frameworks & Tools** – React, Angular, Node.js, GitHub, Figma, etc.
+- **Portfolio projects** – includes:
+  - 🛍️ **Retrendo** – secondhand marketplace (Node.js + EJS + SQLite)
+  - 👗 **FreakyFashion** – full-stack e-commerce app (Angular & React)
+  - 🐱🐶 **Cats vs Dogs Connect Four** – React + Tailwind game project
 
-## Expanding the ESLint configuration
+## Live Demo
+👉 [View my portfolio here](https://cmajaraite.github.io/)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- **Frontend:** React, Vite, CSS
+- **Styling:** Custom CSS with responsive design
+- **Extras:** Typed.js animations, custom carousel
+---
+
+💡 Feel free to explore the code, try out the live demo, or get in touch if you want to collaborate!
